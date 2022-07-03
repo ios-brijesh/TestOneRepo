@@ -22,11 +22,25 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Emd-v4-QHz">
+                                <rect key="frame" x="20" y="826.5" width="374" height="35.5"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Sfy-CP-9m2" kind="show" id="u8Q-G4-pau"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Emd-v4-QHz" secondAttribute="trailing" constant="20" id="BKF-ZD-I5r"/>
+                            <constraint firstItem="Emd-v4-QHz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VWs-t8-LNo"/>
                             <constraint firstItem="1LT-em-hQW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dTM-xc-bld"/>
+                            <constraint firstItem="Emd-v4-QHz" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fiN-te-Y3U"/>
                             <constraint firstItem="1LT-em-hQW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gs9-nq-Mfo"/>
                         </constraints>
                     </view>
@@ -35,6 +49,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="65.625"/>
+        </scene>
+        <!--Screen OneVC-->
+        <scene sceneID="03s-ie-Rc5">
+            <objects>
+                <viewController storyboardIdentifier="ScreenOneVC" id="Sfy-CP-9m2" customClass="ScreenOneVC" customModule="DemoApp1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xof-Ta-3SP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Screen One" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUP-hs-cMw">
+                                <rect key="frame" x="152.5" y="88" width="109" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zMy-rO-iJH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mUP-hs-cMw" firstAttribute="top" secondItem="zMy-rO-iJH" secondAttribute="top" id="9H3-ff-HXZ"/>
+                            <constraint firstItem="mUP-hs-cMw" firstAttribute="centerX" secondItem="zMy-rO-iJH" secondAttribute="centerX" id="nlD-BM-1Sz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PHp-xd-FNJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tve-N3-HSo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1629" y="66"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cik-6Q-uhN">
@@ -56,6 +98,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
